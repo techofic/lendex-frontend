@@ -1,0 +1,32 @@
+.hooper {
+    height: 100% !important;
+}
+
+.hooper {
+    &:not(.no-margin) {
+        //   height: 100% !important;
+        //   width: calc(100% + 2 * 10px) !important;
+        //   margin: 0 -10px;
+
+        .hooper-slide {
+            padding: 0 20px !important;
+        }
+    }
+}
+
+.hooper-pagination {
+    bottom: -40px;
+    padding: 0;
+}
+
+.hooper-indicator{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #858792;
+    margin: 0 10px;
+
+    &.is-active {
+        background: #ffffff;
+    }
+}
