@@ -1,49 +1,9 @@
-$('.service-carousel').owlCarousel({
-    loop:true,
-    margin:45,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:2
-        },
-        1200:{
-            items:3
-        },
-    }
-})
+const servicesDropdown = document.querySelector('#services-dropdown');
 
-$('.project-carousel').owlCarousel({
-    loop:false,
-    margin:50,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:2
-        }
-    }
-})
+document.querySelector('.nav-link.dropdown-toggle').addEventListener('click', () => {
+  servicesDropdown.classList.toggle('show');
+});
 
-$('.testomonial-carousel').owlCarousel({
-    loop:true,
-    margin:20,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        992:{
-            items:2
-        }
-    }
-})
 
 // Navbar offcanvas dropdown toggle starts
 const navbarOffCanvas = document.querySelector(".offcanvas.navbar-content__item");
@@ -68,3 +28,26 @@ if (navbarOffCanvas) {
         $(".nav-item a").next().slideUp();
     })
 }
+
+$(document).ready(function() {
+    // Hide all dropdown menus initially
+    $('.dropdown-menu').hide();
+  
+    // Toggle the dropdown menu when the dropdown toggle link is clicked
+    $('.dropdown-toggle').click(function(e) {
+      e.preventDefault();
+  
+      // Hide all other dropdown menus
+      $('.dropdown-menu').not($(this).siblings('.dropdown-menu')).slideUp();
+  
+      // Toggle the clicked dropdown menu
+      $(this).siblings('.dropdown-menu').slideToggle();
+    });
+  
+    // Hide the dropdown menu when clicking outside of it
+    $(document).click(function(e) {
+      if (!$(e.target).is('.dropdown-toggle') && !$(e.target).parents().is('.dropdown-menu')) {
+        $('.dropdown-menu').slideUp();
+      }
+    });
+  });
