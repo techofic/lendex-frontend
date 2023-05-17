@@ -38,7 +38,8 @@ export default {
     "iview/dist/styles/iview.css",
     "hooper/dist/hooper.css",
     "~static/assets/css/style.scss",
-    ],
+    "line-awesome/dist/line-awesome/css/line-awesome.min.css"
+  ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
