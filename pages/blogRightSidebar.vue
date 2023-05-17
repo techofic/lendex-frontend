@@ -38,7 +38,7 @@
                         <div class="blog-section--list">
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-1.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-1.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -70,7 +70,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-2.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-2.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-3.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-3.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -130,7 +130,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-4.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-4.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -160,7 +160,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-5.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-5.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -190,7 +190,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-6.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-6.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -220,7 +220,7 @@
                             </div>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/blog-feed-img-7.png" alt=""> -->
+                                    <img src="/assets/img/blog-feed-img-7.png" alt="">
                                 </a>
                                 <div class="content-box">
                                     <div class="content">
@@ -340,7 +340,7 @@
                                 <ul class="recent-blog-item-list">
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-1.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-1.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -356,7 +356,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-2.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-2.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -372,7 +372,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-3.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-3.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -388,7 +388,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-4.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-4.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -436,32 +436,32 @@
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>

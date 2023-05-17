@@ -37,7 +37,7 @@
                     <div class="col-12">
                         <div class="project-content-section">
                             <div class="project-hero-image">
-                                <!-- <img src="./assets/img/project-details-hero-img.png" alt=""> -->
+                                <img src="/assets/img/project-details-hero-img.png" alt="">
                             </div>
                             <div class="row">
                                 <div class="col-lg-8">
@@ -175,7 +175,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-1.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-1.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">
@@ -188,7 +188,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-2.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-2.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">
@@ -201,7 +201,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-3.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-3.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">

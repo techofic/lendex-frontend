@@ -39,7 +39,7 @@
         </div>
         <div class="hero-portrait">
           <div class="image">
-            <!-- <img src="static/assets/img/portrait-hero.png" alt=""> -->
+            <img src="/assets/img/portrait-hero.png" alt="">
             <div class="image-half-round-shape">
             </div>
             <div class="social-link">
@@ -71,7 +71,7 @@
             <slide>
               <div class="product-card bg-dark-blue">
                 <div class="product-card--icon">
-                  <!-- <img src="./assets/img/service-icon-1.png" alt=""> -->
+                  <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
                 <h4 class="product-card--title">
                   UI/UX Design
@@ -88,7 +88,7 @@
             <slide>
               <div class="product-card bg-dark-blue">
                 <div class="product-card--icon">
-                  <!-- <img src="./assets/img/service-icon-1.png" alt=""> -->
+                  <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
                 <h4 class="product-card--title">
                   UI/UX Design
@@ -105,7 +105,7 @@
             <slide>
               <div class="product-card bg-dark-blue">
                 <div class="product-card--icon">
-                  <!-- <img src="./assets/img/service-icon-1.png" alt=""> -->
+                  <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
                 <h4 class="product-card--title">
                   UI/UX Design
@@ -122,7 +122,7 @@
             <slide>
               <div class="product-card bg-dark-blue">
                 <div class="product-card--icon">
-                  <!-- <img src="./assets/img/service-icon-1.png" alt=""> -->
+                  <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
                 <h4 class="product-card--title">
                   UI/UX Design
@@ -210,7 +210,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-1.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-1.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">
@@ -223,7 +223,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-2.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-2.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">
@@ -236,7 +236,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="counter-single--item">
               <div class="icon">
-                <!-- <img src="./assets/img/counterup-icon-3.png" alt=""> -->
+                <img src="/assets/img/counterup-icon-3.png" alt="">
               </div>
               <div class="content">
                 <h2 class="number">
@@ -273,10 +273,10 @@
                 <div class="bg-overlay">
                 </div>
                 <div class="bg-image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
                 <div class="image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
               </div>
               <div class="content">
@@ -295,10 +295,10 @@
                 <div class="bg-overlay">
                 </div>
                 <div class="bg-image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
                 <div class="image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
               </div>
               <div class="content">
@@ -317,10 +317,10 @@
                 <div class="bg-overlay">
                 </div>
                 <div class="bg-image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
                 <div class="image">
-                  <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                  <img src="/assets/img/project-slider-img-3.png" alt="">
                 </div>
               </div>
               <div class="content">
@@ -460,32 +460,32 @@
             <slide>
               <div class="single-item">
                 <a href="#" class="image">
-                  <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                  <!-- <img src="./assets/img/1.png" alt=""> -->
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
                 </a>
               </div>
             </slide>
             <slide>
               <div class="single-item">
                 <a href="#" class="image">
-                  <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                  <!-- <img src="./assets/img/1.png" alt=""> -->
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
                 </a>
               </div>
             </slide>
             <slide>
               <div class="single-item">
                 <a href="#" class="image">
-                  <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                  <!-- <img src="./assets/img/1.png" alt=""> -->
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
                 </a>
               </div>
             </slide>
             <slide>
               <div class="single-item">
                 <a href="#" class="image">
-                  <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                  <!-- <img src="./assets/img/1.png" alt=""> -->
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
                 </a>
               </div>
             </slide>
@@ -511,7 +511,7 @@
         <div class="blog-section--list">
           <div class="single-item">
             <a href="#" class="image">
-              <!-- <img src="./assets/img/blog-feed-img-1.png" alt=""> -->
+              <img src="/assets/img/blog-feed-img-1.png" alt="">
             </a>
             <div class="content-box">
               <div class="content">
@@ -530,7 +530,7 @@
           </div>
           <div class="single-item">
             <a href="#" class="image">
-              <!-- <img src="./assets/img/blog-feed-img-2.png" alt=""> -->
+              <img src="/assets/img/blog-feed-img-2.png" alt="">
             </a>
             <div class="content-box">
               <div class="content">
@@ -547,7 +547,7 @@
           </div>
           <div class="single-item">
             <a href="#" class="image">
-              <!-- <img src="./assets/img/blog-feed-img-3.png" alt=""> -->
+              <img src="/assets/img/blog-feed-img-3.png" alt="">
             </a>
             <div class="content-box">
               <div class="content">

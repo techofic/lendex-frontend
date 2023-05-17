@@ -9,8 +9,7 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col">
                             <nuxt-link to="/home" class="header-logo">
-                                Lendex
-                                <!-- <img src="./assets/img/logo.png" alt=""> -->
+                                <img src="/assets/img/logo.png" alt="">
                             </nuxt-link>
                         </div>
                         <div class="col-auto">
@@ -67,8 +66,7 @@
                     <div class="col">
                         <div class="mobile-logo">
                             <nuxt-link to="/home">
-                                Lendex
-                                <!-- <img src="./assets/img/logo.png" alt=""> -->
+                                <img src="/assets/img/logo.png" alt="">
                             </nuxt-link>
                         </div>
                     </div>

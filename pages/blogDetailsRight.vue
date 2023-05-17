@@ -74,10 +74,10 @@
                             </p>
                             <div class="content-inner-image image-double">
                                 <div class="image">
-                                    <!-- <img src="./assets/img/blog-details-content-inner-img-1.png" alt=""> -->
+                                    <img src="/assets/img/blog-details-content-inner-img-1.png" alt="">
                                 </div>
                                 <div class="image">
-                                    <!-- <img src="./assets/img/blog-details-content-inner-img-2.png" alt=""> -->
+                                    <img src="/assets/img/blog-details-content-inner-img-2.png" alt="">
                                 </div>
                             </div>
                             <h2 class="title">
@@ -179,7 +179,7 @@
                                 <li>
                                     <div class="comment-single-item">
                                         <div class="image">
-                                            <!-- <img src="./assets/img/user-1.png" alt=""> -->
+                                            <img src="/assets/img/user-1.png" alt="">
                                         </div>
                                         <div class="content">
                                             <div class="top">
@@ -208,7 +208,7 @@
                                 <li>
                                     <div class="comment-single-item">
                                         <div class="image">
-                                            <!-- <img src="./assets/img/user-2.png" alt=""> -->
+                                            <img src="/assets/img/user-2.png" alt="">
                                         </div>
                                         <div class="content">
                                             <div class="top">
@@ -238,7 +238,7 @@
                                 <li>
                                     <div class="comment-single-item">
                                         <div class="image">
-                                            <!-- <img src="./assets/img/user-3.png" alt=""> -->
+                                            <img src="/assets/img/user-3.png" alt="">
                                         </div>
                                         <div class="content">
                                             <div class="top">
@@ -363,7 +363,7 @@
                                 <ul class="recent-blog-item-list">
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-1.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-1.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -379,7 +379,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-2.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-2.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -395,7 +395,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-3.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-3.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">
@@ -411,7 +411,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="image">
-                                            <!-- <img src="./assets/img/recent-blog-img-4.png" alt=""> -->
+                                            <img src="/assets/img/recent-blog-img-4.png" alt="">
                                         </a>
                                         <div class="content">
                                             <h4 class="title">

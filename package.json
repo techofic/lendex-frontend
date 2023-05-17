@@ -10,6 +10,7 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@nuxtjs/axios": "^5.11.0",
     "cookie": "^0.4.0",
     "hooper": "^0.3.4",

@@ -37,7 +37,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-1.png" alt=""> -->
+                                <img src="/assets/img/service-icon-1.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 UI/UX Design
@@ -54,7 +54,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-2.png" alt=""> -->
+                                <img src="/assets/img/service-icon-2.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 UI/UX Design
@@ -71,7 +71,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-3.png" alt=""> -->
+                                <img src="/assets/img/service-icon-3.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 UI/UX Design
@@ -88,7 +88,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-4.png" alt=""> -->
+                                <img src="/assets/img/service-icon-4.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 SEO Marketing
@@ -105,7 +105,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-5.png" alt=""> -->
+                                <img src="/assets/img/service-icon-5.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 Data Analysis
@@ -122,7 +122,7 @@
                     <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card bg-dark-blue">
                             <div class="product-card--icon">
-                                <!-- <img src="./assets/img/service-icon-6.png" alt=""> -->
+                                <img src="/assets/img/service-icon-6.png" alt="">
                             </div>
                             <h4 class="product-card--title">
                                 Brand Identity
@@ -148,7 +148,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-1.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-1.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -161,7 +161,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-2.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-2.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -174,7 +174,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-3.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-3.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -206,32 +206,32 @@
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
                         </slide>

@@ -54,10 +54,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-1.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-1.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-1.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-1.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -76,10 +76,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-2.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-2.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-2.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-2.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -98,10 +98,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-3.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-3.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-3.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -120,10 +120,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-4.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-4.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-4.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-4.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -142,10 +142,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-5.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-5.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-5.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-5.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -164,10 +164,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-6.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-6.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-6.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-6.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -186,10 +186,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-7.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-7.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-7.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-7.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">
@@ -208,10 +208,10 @@
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <!-- <img src="./assets/img/project-slider-img-8.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-8.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <!-- <img src="./assets/img/project-slider-img-8.png" alt=""> -->
+                                                <img src="/assets/img/project-slider-img-8.png" alt="">
                                             </div>
                                         </div>
                                         <div class="content">

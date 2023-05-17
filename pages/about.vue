@@ -189,7 +189,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-1.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-1.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -202,7 +202,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-2.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-2.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -215,7 +215,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="counter-single--item">
                             <div class="icon">
-                                <!-- <img src="./assets/img/counterup-icon-3.png" alt=""> -->
+                                <img src="/assets/img/counterup-icon-3.png" alt="">
                             </div>
                             <div class="content">
                                 <h2 class="number">
@@ -246,89 +246,88 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-nav">
-                        <div class="carousel-nav--left">
-                            <i class="las la-angle-double-left"></i>
-                        </div>
-                        <div class="carousel-nav--right">
-                            <i class="las la-angle-double-right"></i>
-                        </div>
-                    </div>
                 </div>
                 <div class="testomonial-wrapper">
                     <div class="row">
                         <div class="col-12">
-                            <div class="owl-carousel owl-theme testomonial-carousel">
-                                <div class="item">
-                                    <div class="content">
-                                        <span class="icon">“</span>
-                                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                                            been the industr standard dummy.</p>
-                                        <div class="info">
-                                            <div class="author">
-                                                <h4 class="name">Raleigh Friend</h4>
-                                                <span class="designation">CEO, Seoly</span>
+                            <div class="testomonial-carousel">
+                                <hooper :settings="testomonial" :itemsToSlide="1" :wheelControl="false"
+                                    :infiniteScroll="false">
+                                    <slide>
+                                        <div class="item">
+                                            <div class="content">
+                                                <span class="icon">“</span>
+                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
+                                                    industry has
+                                                    been the industr standard dummy.</p>
+                                                <div class="info">
+                                                    <div class="author">
+                                                        <h4 class="name">Raleigh Friend</h4>
+                                                        <span class="designation">CEO, Seoly</span>
+                                                    </div>
+                                                    <ul class="review">
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <ul class="review">
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                            </ul>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="content">
-                                        <span class="icon">“</span>
-                                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                                            been the industr standard dummy.</p>
-                                        <div class="info">
-                                            <div class="author">
-                                                <h4 class="name">Raleigh Friend</h4>
-                                                <span class="designation">CEO, Seoly</span>
+                                    </slide>
+                                    <slide>
+                                        <div class="item">
+                                            <div class="content">
+                                                <span class="icon">“</span>
+                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
+                                                    industry has
+                                                    been the industr standard dummy.</p>
+                                                <div class="info">
+                                                    <div class="author">
+                                                        <h4 class="name">Raleigh Friend</h4>
+                                                        <span class="designation">CEO, Seoly</span>
+                                                    </div>
+                                                    <ul class="review">
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <ul class="review">
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                            </ul>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="content">
-                                        <span class="icon">“</span>
-                                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                                            been the industr standard dummy.</p>
-                                        <div class="info">
-                                            <div class="author">
-                                                <h4 class="name">Raleigh Friend</h4>
-                                                <span class="designation">CEO, Seoly</span>
+                                    </slide>
+                                    <slide>
+                                        <div class="item">
+                                            <div class="content">
+                                                <span class="icon">“</span>
+                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
+                                                    industry has
+                                                    been the industr standard dummy.</p>
+                                                <div class="info">
+                                                    <div class="author">
+                                                        <h4 class="name">Raleigh Friend</h4>
+                                                        <span class="designation">CEO, Seoly</span>
+                                                    </div>
+                                                    <ul class="review">
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                        <li class="fill"><i class="las la-star"></i></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <ul class="review">
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                                <li class="fill"><i class="las la-star"></i></li>
-                                            </ul>
                                         </div>
-                                    </div>
-                                </div>
+                                    </slide>
+
+                                    <hooper-pagination slot="hooper-addons"></hooper-pagination>
+
+                                </hooper>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-nav-2">
-                    <div class="carousel-nav-2--left">
-                        <i class="las la-angle-double-left"></i>
-                    </div>
-                    <div class="carousel-nav-2--right">
-                        <i class="las la-angle-double-right"></i>
                     </div>
                 </div>
             </div>
@@ -348,42 +347,103 @@
                 </div>
 
                 <div class="company-logo">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                    <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
+                        <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        </slide>
+                        <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-2.png" alt=""> -->
-                                    <!-- <img src="./assets/img/2.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        </slide>
+                        <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-3.png" alt=""> -->
-                                    <!-- <img src="./assets/img/3.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        </slide>
+                        <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-4.png" alt=""> -->
-                                    <!-- <img src="./assets/img/4.png" alt=""> -->
+                                    <img src="/assets/img/company-logo-1.png" alt="">
+                                    <img src="/assets/img/1.png" alt="">
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </slide>
+                    </hooper>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+import {
+  Hooper,
+  Slide,
+  Progress as HooperProgress,
+  Pagination as HooperPagination,
+  Navigation as HooperNavigation,
+} from "hooper";
+import "hooper/dist/hooper.css";
+
+export default {
+  components: {
+    Hooper,
+    Slide,
+    HooperProgress,
+    HooperPagination,
+    HooperNavigation,
+  },
+  data() {
+    return {
+      testomonial: {
+        itemsToShow: 1,
+        centerMode: false,
+        // itemsToSlide : 3,
+        breakpoints: {
+          450: {
+            centerMode: false,
+            itemsToShow: 2,
+          },
+          800: {
+            centerMode: false,
+            itemsToShow: 2,
+          },
+          1000: {
+            itemsToShow: 2,
+          },
+        },
+      },
+      company: {
+        itemsToShow: 1,
+        centerMode: false,
+        // itemsToSlide : 3,
+        breakpoints: {
+          480: {
+            centerMode: false,
+            itemsToShow: 2,
+          },
+          991: {
+            centerMode: false,
+            itemsToShow: 3,
+          },
+          1200: {
+            itemsToShow: 4,
+          },
+        },
+      },
+    };
+  },
+};
+</script>

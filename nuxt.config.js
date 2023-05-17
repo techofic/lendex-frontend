@@ -14,7 +14,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: "Laravel Nuxt Template",
+    title: "Lendex",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width: device-width, initial-scale=1" },
@@ -38,7 +38,7 @@ export default {
     "iview/dist/styles/iview.css",
     "hooper/dist/hooper.css",
     "~static/assets/css/style.scss",
-  ],
+    ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins

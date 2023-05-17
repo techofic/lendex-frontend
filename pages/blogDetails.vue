@@ -65,10 +65,10 @@
                     </p>
                     <div class="content-inner-image image-double">
                         <div class="image">
-                            <!-- <img src="./assets/img/blog-details-content-inner-img-1.png" alt=""> -->
+                            <img src="/assets/img/blog-details-content-inner-img-1.png" alt="">
                         </div>
                         <div class="image">
-                            <!-- <img src="./assets/img/blog-details-content-inner-img-2.png" alt=""> -->
+                            <img src="/assets/img/blog-details-content-inner-img-2.png" alt="">
                         </div>
                     </div>
                     <h2 class="title">
@@ -157,7 +157,7 @@
                         <li>
                             <div class="comment-single-item">
                                 <div class="image">
-                                    <!-- <img src="./assets/img/user-1.png" alt=""> -->
+                                    <img src="/assets/img/user-1.png" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="top">
@@ -184,7 +184,7 @@
                         <li>
                             <div class="comment-single-item">
                                 <div class="image">
-                                    <!-- <img src="./assets/img/user-2.png" alt=""> -->
+                                    <img src="/assets/img/user-2.png" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="top">
@@ -212,7 +212,7 @@
                         <li>
                             <div class="comment-single-item">
                                 <div class="image">
-                                    <!-- <img src="./assets/img/user-3.png" alt=""> -->
+                                    <img src="/assets/img/user-3.png" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="top">

@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-xl-6 offset-xl-1 col-md-6">
                         <div class="image">
-                            <!-- <img src="./assets/img/404-error.png" alt=""> -->
+                            <img src="/assets/img/404-error.png" alt="">
                         </div>
                     </div>
                 </div>
