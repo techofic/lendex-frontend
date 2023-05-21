@@ -3204,7 +3204,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .contact-sidebar-wrapper {
-  bottom: calc(-100% + 330px);
+  bottom: calc(-100% - 330px);
   position: absolute;
   margin-top: 0;
 }
