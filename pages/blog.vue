@@ -4,7 +4,7 @@
 
         <!--************Blog-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -32,7 +32,7 @@
 
         <!--************Blog-Body****************-->
 
-        <div class="blog-section blog-list pt-135 pb-135 bg-secondary-blue">
+        <div class="blog-section blog-list pt-135 pb-135">
             <div class="container">
                 <div class="blog-section--list">
                     <div class="single-item">
@@ -276,7 +276,7 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="company-section pb-135 pt-135">
             <div class="container">
                 <div class="section-header">
                     <h4 class="subtitle">

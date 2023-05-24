@@ -3,7 +3,7 @@
     <div>
         <!--************Error-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Error-Body****************-->
 
-        <div class="error-section bg-secondary-blue pb-135 pt-135">
+        <div class="error-section pb-135 pt-135">
             <div class="container">
                 <div class="row align-items-center flex-md-row flex-column-reverse">
                     <div class="col-xl-5 col-md-6">

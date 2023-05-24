@@ -3,7 +3,7 @@
     <div>
         <!--************Blog-Right-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Blog-Right-Header****************-->
 
-        <div class="blog-list-box pb-135 pt-135 bg-secondary-blue">
+        <div class="blog-list-box pb-135 pt-135">
             <div class="container">
                 <div class="row flex-lg-row ">
                     <div class="col-xl-8 col-lg-7">
@@ -420,7 +420,7 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="company-section pb-135 pt-135">
             <div class="container">
                 <div class="section-header">
                     <h4 class="subtitle">

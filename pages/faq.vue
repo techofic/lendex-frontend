@@ -3,7 +3,7 @@
     <div>
         <!--************FAQ-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************FAQ-Body****************-->
 
-        <div class="faq-section bg-light-blue pb-150 pt-135">
+        <div class="faq-section pb-150 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

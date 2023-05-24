@@ -11,7 +11,7 @@
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 25px;
-        color: $secondaryColor;
+        color: var(--secondaryColor);
 
         span {
             padding-right: 25px;
@@ -21,14 +21,14 @@
     .title {
         font-size: 70px;
         // font-weight: 700;
-        color: $primaryColor;
+        color: var(--primaryColor);
         font-family: "Cormorant Garamond", serif;
         margin-top: 25px;
         margin-bottom: 50px;
     }
 
     .content-meta {
-        color: $secondaryColor;
+        color: var(--secondaryColor);
         display: flex;
         justify-content: space-between;
         font-size: 16px;
@@ -156,7 +156,7 @@
             margin-top: 20px;
             padding: 20px 40px;
             border-radius: 30px;
-            background: #2a2c39;
+            background: var(--bgDarkBlue);
             display: inline-flex;
 
             li {
@@ -172,7 +172,7 @@
             }
 
             .active {
-                color: $secondaryColor;
+                color: var(--secondaryColor);
             }
         }
     }

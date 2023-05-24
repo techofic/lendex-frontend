@@ -20,16 +20,16 @@
         border: 1px solid rgba(255, 255, 255, .1);
         text-align: center;
         display: inline-block;
-        color: $secondaryColor;
+        color: var(--secondaryColor);
 
         a {
-            color: $secondaryColor;
+            color: var(--secondaryColor);
         }
 
         &.active {
 
-            background: #252734;
-            border-color: #252734;
+            background: var(--bgDarkBlue);
+            border-color: var(--bgDarkBlue);
 
         }
     }
@@ -37,25 +37,28 @@
 
 .blog-list {
     position: relative;
+    background-color: var(--bgSecondaryBlue);
 }
 
 .blog-list-box {
+    background-color: var(--bgSecondaryBlue);
+
     .sidebar-widget-area {
         margin-top: 0;
 
         .sidebar-widget-single-area {
             margin-bottom: 80px;
             padding: 60px 50px 75px 50px;
-            background: #252734;
+            background: var(--bgDarkBlue);
 
             .search-widgets-box {
                 position: relative;
 
                 input {
-                    background: #2a2c39;
+                    background: var(--bgDarkBlue);
                     padding: 20px 60px 20px 25px;
                     border: none;
-                    color: #fff;
+                    color: var(--primaryColor);
                     width: 100%;
                 }
 
@@ -67,7 +70,7 @@
                     width: 60px;
                     height: 100%;
                     background: 0 0;
-                    color: #fff;
+                    color: var(--primaryColor);
 
                     i {
                         transform: rotate(-90deg);
@@ -81,7 +84,7 @@
 
 .tag-box {
     margin-top: 65px;
-    background: #252734;
+    background: var(--bgDarkBlue);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -104,7 +107,7 @@
                 margin-right: 10px;
 
                 a {
-                    color: $secondaryColor;
+                    color: var(--secondaryColor);
                 }
             }
         }
@@ -166,14 +169,14 @@
 
                         .designation {
                             display: block;
-                            color: $secondaryColor;
+                            color: var(--secondaryColor);
                         }
                     }
 
                     .replay-btn {
                         background: 0 0;
                         border: none;
-                        color: #fff;
+                        color: var(--primaryColor);
                         font-size: 16px;
 
                         i {

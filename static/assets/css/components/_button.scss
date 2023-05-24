@@ -9,7 +9,7 @@ button {
 }
 
 .main-button {
-    border: 1px solid $borderColor;
+    border: 1px solid var(--borderColor);
     transition: all .5s ease;
     padding-left: 40px;
     padding-right: 40px;
@@ -19,11 +19,11 @@ button {
     position: relative;
     z-index: 9;
     overflow: hidden;
-    color: $primaryColor;
+    color: var(--primaryColor);
     box-shadow: none !important;
     outline: 0 !important;
     &:hover {
-        background-color: $borderColor;
+        background-color: var(--borderColor);
     }
     i {
         padding-left: 10px;
@@ -32,12 +32,12 @@ button {
 }
 
 .btn-outline-one:hover {
-    background-color: $borderColor;
-    border: 1px solid $borderColor;
+    background-color: var(--borderColor);
+    border: 1px solid var(--borderColor);
 }
 
 .btn-outline-one {
-    border: 1px solid $borderColor;
+    border: 1px solid var(--borderColor);
     transition: all .5s ease;
 }
 
@@ -54,7 +54,7 @@ button {
     position: relative;
     z-index: 9;
     overflow: hidden;
-    color: #fff;
+    color: var(--primaryColor);
     box-shadow: none !important;
     outline: 0 !important;
 }

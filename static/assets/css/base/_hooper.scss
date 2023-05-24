@@ -1,3 +1,7 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .hooper {
     height: 100% !important;
 }
@@ -23,10 +27,10 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background-color: #858792;
+    background-color: var(--secondaryColor);
     margin: 0 10px;
 
     &.is-active {
-        background: #ffffff;
+        background: var(--primaryColor);
     }
 }

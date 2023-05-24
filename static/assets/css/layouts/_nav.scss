@@ -5,6 +5,26 @@
 
 // Header 
 
+.header-nav>li>a::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(-50%,-50%) scale(.9);
+    left: auto;
+    left: 50%;
+    width: 120px;
+    height: 60px;
+    background-image: url(../img/menu-hover-shape.png);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.header-nav>li>a:hover::after {
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+    opacity: 1
+}
+
 .header {
     &-section {
         position: absolute;
@@ -21,7 +41,7 @@
         //         z-index: 99;
         //         width: 100%;
         //         top: 0;
-        //         background: #252734;
+        //         background: var(--bgDarkBlue);
         //         box-shadow: 0 0 2px rgba(0,0,0,.1);
         //         animation-name: fadeInDown;
         //         animation-duration: .9s;
@@ -51,11 +71,11 @@
                 font-size: 18px;
                 line-height: 120px;
                 display: inline-block;
-                color: $secondaryColor;
+                color: var(--secondaryColor);
                 position: relative;
 
                 &:hover {
-                    color: $primaryColor;
+                    color: var(--primaryColor);
                 }
             }
 
@@ -78,7 +98,7 @@
             top: 100%;
             left: 0;
             width: 280px;
-            background: #30313d;
+            background: var(--bgLightBlue);
             border-radius: 0 0 5px 5px;
             visibility: hidden;
             opacity: 0;
@@ -98,7 +118,7 @@
                     padding: 10px 25px;
                     display: block;
                     position: relative;
-                    color: $primaryColor;
+                    color: var(--primaryColor);
                     z-index: 1;
                     line-height: 25px;
 
@@ -110,14 +130,14 @@
                         right: 0;
                         width: 0%;
                         height: 100%;
-                        background: #fff;
+                        background: var(--primaryColor);
                         -webkit-transition: all .5s ease;
                         transition: all .5s ease;
                         z-index: -1;
                     }
 
                     &:hover {
-                        color: $secondaryColor;
+                        color: var(--secondaryColor);
 
                         &::after {
                             left: 0;
@@ -139,7 +159,7 @@
         font-size: 18px;
         line-height: 120px;
         display: inline-block;
-        color: #858792;
+        color: var(--secondaryColor);
         position: relative;
     }
 
@@ -162,7 +182,7 @@
     left: 0;
     width: 100%;
     z-index: 99;
-    background: #2a2c39;
+    background: var(--bgDarkBlue);
     padding: 20px 0;
 }
 
@@ -171,7 +191,7 @@
 
     button {
         i {
-            color: $primaryColor;
+            color: var(--primaryColor);
         }
     }
 }
@@ -185,7 +205,7 @@
 
             a {
                 position: relative;
-                color: $primaryColor;
+                color: var(--primaryColor);
                 padding: 0;
 
                 &:after {
@@ -235,7 +255,7 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    background-color: #2a2c39;
+    background-color: var(--bgDarkBlue);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     position: fixed;
@@ -274,7 +294,7 @@
             padding: 16px;
 
             i {
-                color: #ffffff;
+                color: var(--primaryColor);
                 font-size: 22px;
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 text-align: center;

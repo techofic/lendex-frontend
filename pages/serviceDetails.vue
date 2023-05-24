@@ -3,7 +3,7 @@
     <div>
         <!--************Service-Details-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Service-Details-Body****************-->
 
-        <div class="service-details--box pb-135 pt-135 bg-light-blue">
+        <div class="service-details--box pb-135 pt-135">
             <div class="container">
                 <div class="row  flex-lg-rowflex-column-reverse">
                     <div class="col-xl-4 col-lg-5">
@@ -167,7 +167,7 @@
                                 </p>
                                 <ul class="pricing-area">
                                     <li class="single-item">
-                                        <div class="price-card bg-dark-blue">
+                                        <div class="price-card">
                                             <h4 class="name">Basic</h4>
                                             <h2 class="value">$90</h2>
                                             <span class="time">/mo</span>
@@ -181,7 +181,7 @@
                                         </div>
                                     </li>
                                     <li class="single-item">
-                                        <div class="price-card bg-dark-blue">
+                                        <div class="price-card">
                                             <h4 class="name">Standard</h4>
                                             <h2 class="value">$100</h2>
                                             <span class="time">/mo</span>
@@ -204,7 +204,7 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="company-section pb-135 pt-135">
             <div class="container">
                 <div class="section-header">
                     <h4 class="subtitle">

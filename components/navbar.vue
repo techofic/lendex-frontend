@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- <div :class="theme === 'light' ? 'light-theme' : 'dark-theme'" class="theme-body"> -->
 
         <!--************Header****************-->
 
@@ -11,6 +12,8 @@
                             <nuxt-link to="/home" class="header-logo">
                                 <img src="/assets/img/logo.png" alt="">
                             </nuxt-link>
+                            <!-- <button @click="changeTheme('light')">light theme</button> -->
+                            <!-- <button @click="changeTheme('dark')">dark theme</button> -->
                         </div>
                         <div class="col-auto">
                             <ul class="header-nav">
@@ -45,6 +48,12 @@
                                 </li>
                                 <li><nuxt-link to="/contact">Contact</nuxt-link></li>
                             </ul>
+                        </div>
+                        <div class="col theme-switch">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span @click="changeTheme('light')" class="slider round"></span>
+                            </label>
                         </div>
                         <div class="col">
                             <div class="header-btn-link text-end">
@@ -85,30 +94,32 @@
             <div class="navbar-mobile">
                 <div class="navbar-mobile--head">
                     <button type="button" v-on:click="hideSidebar()">
-                        <i class="lni lni-close"></i>
-                    </button>
+                        <i class="las la-times"></i>                    </button>
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <nuxt-link class="nav-link" aria-current="page" to="/home">HOME</nuxt-link>
                     </li>
-                    <li class="nav-item dropdown" @click="showServicesDropdown = !showServicesDropdown; closeOtherDropdowns('services')">
-                        <nuxt-link to="/service" class="nav-link dropdown-toggle" :class="{ show: showServicesDropdown }">
+                    <li class="nav-item dropdown"
+                        @click="showServicesDropdown = !showServicesDropdown; closeOtherDropdowns('services')">
+                        <nuxt-link to="/service" class="nav-link dropdown-toggle" :class=" { show: showServicesDropdown } ">
                             SERVICES
                         </nuxt-link>
                         <transition name="slide">
-                            <ul class="dropdown-menu" :class="{ show: showServicesDropdown }" v-if="showServicesDropdown">
+                            <ul class="dropdown-menu" :class=" { show: showServicesDropdown } "
+                                v-if=" showServicesDropdown ">
                                 <li><nuxt-link class="dropdown-item" to="/service">SERVICE LIST</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/serviceDetails">SERVICE DETAILS</nuxt-link></li>
                             </ul>
                         </transition>
                     </li>
-                    <li class="nav-item dropdown" @click="showBlogDropdown = !showBlogDropdown; closeOtherDropdowns('blog')">
-                        <nuxt-link to="/blog" class="nav-link dropdown-toggle" :class="{ show: showBlogDropdown }">
+                    <li class="nav-item dropdown"
+                        @click=" showBlogDropdown = !showBlogDropdown; closeOtherDropdowns('blog') ">
+                        <nuxt-link to="/blog" class="nav-link dropdown-toggle" :class=" { show: showBlogDropdown } ">
                             BLOG
                         </nuxt-link>
                         <transition name="slide">
-                            <ul class="dropdown-menu" :class="{ show: showBlogDropdown }" v-if="showBlogDropdown">
+                            <ul class="dropdown-menu" :class=" { show: showBlogDropdown } " v-if=" showBlogDropdown ">
                                 <li><nuxt-link class="dropdown-item" to="/blog">BLOG LIST FULL WIDTH</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/blogLeftSidebar">BLOG LIST LEFT
                                         SIDEBAR</nuxt-link>
@@ -126,12 +137,13 @@
                             </ul>
                         </transition>
                     </li>
-                    <li class="nav-item dropdown" @click="showPagesDropdown = !showPagesDropdown; closeOtherDropdowns('pages')">
-                        <nuxt-link to="/about" class="nav-link dropdown-toggle" :class="{ show: showPagesDropdown }" >
+                    <li class="nav-item dropdown"
+                        @click=" showPagesDropdown = !showPagesDropdown; closeOtherDropdowns('pages') ">
+                        <nuxt-link to="/about" class="nav-link dropdown-toggle" :class=" { show: showPagesDropdown } ">
                             PAGES
                         </nuxt-link>
                         <transition name="slide">
-                            <ul class="dropdown-menu" :class="{ show: showPagesDropdown }" v-if="showPagesDropdown">
+                            <ul class="dropdown-menu" :class=" { show: showPagesDropdown } " v-if=" showPagesDropdown ">
                                 <li><nuxt-link class="dropdown-item" to="/about">ABOUT US</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/project">PROJECT</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/projectDetails">PROJECT DETAILS</nuxt-link></li>
@@ -144,6 +156,12 @@
                         <nuxt-link class="nav-link" to="/contact">CONTACT</nuxt-link>
                     </li>
                 </ul>
+                <div class="col text-end">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span @click=" changeTheme('light') " class="slider round"></span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
@@ -153,6 +171,9 @@
 export default {
     data() {
         return {
+            theme: "light",
+            toggleCount: 0,
+
             isSidebar: false,
             showServicesDropdown: false,
             showBlogDropdown: false,
@@ -160,6 +181,40 @@ export default {
         };
     },
     methods: {
+        // changeTheme(mode) {
+        //     if (mode == 'light') {
+        //         document.documentElement.style.setProperty('--primaryColor', '#858792');
+        //         document.documentElement.style.setProperty('--secondaryColor', '#ffffff');
+        //     }
+        //     else {
+        //         document.documentElement.style.setProperty('--primaryColor', '#ffffff');
+        //         document.documentElement.style.setProperty('--secondaryColor', '#858792');
+        //     }
+        // },
+        changeTheme() {
+            this.toggleCount++;
+            if (this.toggleCount % 2 === 0) {
+                // Second toggle (even count) activates dark theme
+                this.theme = "dark";
+                document.documentElement.style.setProperty("--primaryColor", "#ffffff");
+                document.documentElement.style.setProperty("--secondaryColor", "#858792");
+                document.documentElement.style.setProperty("--bgDarkBlue", "#252734");
+                document.documentElement.style.setProperty("--bgSecondaryBlue", "#2a2c39");
+                document.documentElement.style.setProperty("--bgLightBlue", "#30313d");
+                document.documentElement.style.setProperty("--bgSingleItem", "#282a37");
+                document.documentElement.style.setProperty("--buttonbg", "#2e303d");
+            } else {
+                // First toggle (odd count) activates light theme
+                this.theme = "light";
+                document.documentElement.style.setProperty("--primaryColor", "#000000");
+                document.documentElement.style.setProperty("--secondaryColor", "#ffffff");
+                document.documentElement.style.setProperty("--bgDarkBlue", "#344467");
+                document.documentElement.style.setProperty("--bgSecondaryBlue", "#5b6584");
+                document.documentElement.style.setProperty("--bgLightBlue", "#8289a1");
+                document.documentElement.style.setProperty("--bgSingleItem", "#abafc0");
+                document.documentElement.style.setProperty("--buttonbg", "#56596e");
+            }
+        },
         showSidebar() {
             this.isSidebar = true;
         },
@@ -221,6 +276,64 @@ export default {
             -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
             -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
             transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked+.slider {
+            background-color: var(--primaryColor);
+
+            &:before {
+                background-color: var(--secondaryColor);
+                transform: translateX(24px);
+            }
+        }
+
+        &:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--secondaryColor);
+        -webkit-transition: .4s;
+        transition: .4s;
+
+        &.round {
+            border-radius: 34px;
+
+            &:before {
+                border-radius: 50%;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 21px;
+            left: 0px;
+            bottom: 1px;
+            background-color: var(--primaryColor);
+            -webkit-transition: .4s;
+            transition: .4s;
         }
     }
 }

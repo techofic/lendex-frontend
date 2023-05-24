@@ -4,7 +4,7 @@
 <div>
         <!--************Blog-Details-Left-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
         <div class="breadcrumb-shape-top-left">
         </div>
         <div class="breadcrumb-shape-bottom-right">
@@ -32,7 +32,7 @@
 
     <!--************Blog-Details-Left-Body****************-->
 
-    <div class="blog-list-box pb-135 pt-135 bg-secondary-blue">
+    <div class="blog-list-box pb-135 pt-135">
         <div class="container">
             <div class="row flex-lg-row flex-column-reverse">
                 <div class="col-xl-4 col-lg-5">

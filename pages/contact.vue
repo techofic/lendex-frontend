@@ -3,7 +3,7 @@
     <div>
         <!--************Contact-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Contact-Body****************-->
 
-        <div class="contact-section bg-secondary-blue pb-135 pt-135">
+        <div class="contact-section pb-135 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

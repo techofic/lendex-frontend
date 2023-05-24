@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="footer-section pt-135 bg-dark-blue">
+        <div class="footer-section pt-135">
             <div class="shape-left">
 
             </div>

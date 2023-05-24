@@ -3,7 +3,7 @@
     <div>
         <!--************Project-Details-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Project-Details-Body****************-->
 
-        <div class="project-details-box bg-light-blue pb-150 pt-135">
+        <div class="project-details-box pb-150 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -169,7 +169,7 @@
 
     <!--************Counter****************-->
 
-    <div class="counter-section pb-135 pt-135 bg-secondary-blue">
+    <div class="counter-section pb-135 pt-135">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4">

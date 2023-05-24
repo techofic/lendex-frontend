@@ -2,7 +2,7 @@
     <div>
         <!--************About-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -30,7 +30,7 @@
 
         <!--************About-template****************-->
 
-        <div class="video-info-display-box bg-secondary-blue pb-135 pt-135">
+        <div class="video-info-display-box pb-135 pt-135">
             <div class="container">
                 <div class="video-info-display-wrapper">
                     <div class="row align-items-center">
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="resume-info-display-box bg-dark-blue pb-135 pt-135">
+        <div class="resume-info-display-box pb-135 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -183,7 +183,7 @@
 
         <!--************Counter****************-->
 
-        <div class="counter-section pb-135 pt-135 bg-secondary-blue">
+        <div class="counter-section pb-135 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
@@ -231,7 +231,7 @@
 
         <!--************Testomonial****************-->
 
-        <div class="testomonial-section pt-135 pb-135 bg-dark-blue">
+        <div class="testomonial-section pt-135 pb-135">
             <div class="container">
                 <div class="row">
                     <div class="col d-xl-flex justify-content-xl-end">
@@ -335,7 +335,7 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="company-section pb-135 pt-135">
             <div class="container">
                 <div class="section-header">
                     <h4 class="subtitle">

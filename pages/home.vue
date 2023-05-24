@@ -2,24 +2,27 @@
   <div>
 
     <!--************Hero****************-->
-    <div class="hero-section bg-dark-blue">
+    <div class="hero-section">
       <div class="hero-wrapper">
         <div class="container">
           <div class="row">
             <div class="col-xxl-7">
               <div class="hero-content">
                 <h3 class="title-big">Hello! I'm</h3>
-                <h2 class="title-large">Mirta
-                  <span class="shape-mark">Akins</span>
+                <h2 class="title-large">
+                  {{ userInfo.name }}
+                  <!-- <span class="shape-mark">Akins</span> -->
                 </h2>
-                <p>UI/UX Designer specializing in Shopify & Webflow.</p>
+                <p>{{ userInfo.designation }}</p>
                 <a href="#" class="btn btn-xl btn-outline-one icon-space-left">
                   Get Resume
                   <i class="las la-download"></i>
                 </a>
                 <div class="video-link">
                   <a href="#" class="wave-btn vbox-item">
-                    <i class="las la-play-circle"></i>
+                    <div class="ripple">
+                      <i class="las la-play-circle"></i>
+                    </div>
                   </a>
                   <span class="video-text"> Watch Video</span>
                 </div>
@@ -55,7 +58,7 @@
 
     <!--************Service****************-->
 
-    <div class="service-section pb-135 pt-135 bg-secondary-blue">
+    <div class="service-section pb-135 pt-135">
       <div class="container">
         <div class="section-header">
           <h4 class="subtitle">
@@ -69,7 +72,28 @@
         <div class="service-section--carousel">
           <hooper :settings="service" :itemsToSlide="3" :wheelControl="false" :infiniteScroll="false">
             <slide>
-              <div class="product-card bg-dark-blue">
+              <div class="product-card ">
+                <!-- <div class="inner-shape inner-shape-top-right">
+                </div> -->
+                <div class="product-card--icon">
+                  <img src="/assets/img/service-icon-1.png" alt="">
+                </div>
+                <h4 class="product-card--title">
+                  UI/UX Design
+                </h4>
+                <ul class="product-card--list">
+                  <li><span><i class="las la-angle-double-right"></i></span>Landing Pages</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>WireFraming</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>Prototyping</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li>
+                </ul>
+                <!-- <div class="inner-shape inner-shape-bottom-right">
+                </div> -->
+              </div>
+            </slide>
+            <slide>
+              <div class="product-card">
                 <div class="product-card--icon">
                   <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
@@ -86,7 +110,7 @@
               </div>
             </slide>
             <slide>
-              <div class="product-card bg-dark-blue">
+              <div class="product-card">
                 <div class="product-card--icon">
                   <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
@@ -103,24 +127,7 @@
               </div>
             </slide>
             <slide>
-              <div class="product-card bg-dark-blue">
-                <div class="product-card--icon">
-                  <img src="/assets/img/service-icon-1.png" alt="">
-                </div>
-                <h4 class="product-card--title">
-                  UI/UX Design
-                </h4>
-                <ul class="product-card--list">
-                  <li><span><i class="las la-angle-double-right"></i></span>Landing Pages</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>WireFraming</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>Prototyping</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li>
-                </ul>
-              </div>
-            </slide>
-            <slide>
-              <div class="product-card bg-dark-blue">
+              <div class="product-card">
                 <div class="product-card--icon">
                   <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
@@ -145,7 +152,7 @@
 
     <!--************Skill****************-->
 
-    <div class="skill-section pt-135 pb-135 bg-dark-blue">
+    <div class="skill-section pt-135 pb-135">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -204,7 +211,7 @@
 
     <!--************Counter****************-->
 
-    <div class="counter-section pb-135 pt-135 bg-secondary-blue">
+    <div class="counter-section pb-135 pt-135">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4">
@@ -252,7 +259,7 @@
 
     <!--************Project****************-->
 
-    <div class="project-section pt-135 pb-135 bg-light-blue">
+    <div class="project-section pt-135 pb-135">
       <div class="container">
         <div class="project-section--main">
           <div class="section-header">
@@ -344,7 +351,7 @@
 
     <!--************Testomonial****************-->
 
-    <div class="testomonial-section pt-135 pb-135 bg-dark-blue">
+    <div class="testomonial-section pt-135 pb-135">
       <div class="container">
         <div class="row">
           <div class="col d-xl-flex justify-content-xl-end">
@@ -444,7 +451,7 @@
 
     <!--************Company****************-->
 
-    <div class="company-section pb-135 pt-135 bg-secondary-blue">
+    <div class="company-section pb-135 pt-135">
       <div class="container">
         <div class="section-header">
           <h4 class="subtitle">
@@ -496,7 +503,7 @@
 
     <!--************Blog****************-->
 
-    <div class="blog-section pt-135 pb-135 bg-light-blue">
+    <div class="blog-section pt-135 pb-135">
       <div class="container">
         <div class="blog-section--header">
           <div class="section-header">
@@ -590,6 +597,8 @@ export default {
   },
   data() {
     return {
+      userInfo: [],
+
       service: {
         itemsToShow: 1,
         centerMode: false,
@@ -664,5 +673,20 @@ export default {
       },
     };
   },
+  methods: {
+
+    async getUserInfo() {
+
+      const res = await this.callApi("get", "/api/user");
+      if (res.status == 200) {
+        this.userInfo = res.data[0];
+        console.log(this.userInfo);
+      }
+    }
+  },
+  async created() {
+    this.getUserInfo();
+  },
+
 };
 </script>

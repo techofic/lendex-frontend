@@ -1,5 +1,13 @@
 @use '../abstracts/mixins' as *;
 
-$primaryColor: #ffffff;
-$secondaryColor: #858792;
-$borderColor : #3b3d49;
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #858792;
+    --bgDarkBlue : #252734;
+    --bgSecondaryBlue : #2a2c39;
+    --bgLightBlue : #30313d;
+    --borderColor : #3b3d49;
+    --bgSingleItem : #282a37;
+    --buttonbg : #2e303d;
+}

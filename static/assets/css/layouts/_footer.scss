@@ -7,6 +7,7 @@
 .footer-section {
     overflow: hidden;
     position: relative;
+    background-color: var(--bgDarkBlue);
 
     .shape-left {
         top: -575px;
@@ -88,22 +89,23 @@
             padding: 20px 40px;
             margin-right: 20px;
             border-radius: 32.5px;
-            border: 1px solid rgba(255, 255, 255, .1);
+            // border: 1px solid rgba(255, 255, 255, .1);
+            border: 1px solid var(--buttonbg);
             background: 0 0;
-            color: #fff;
+            color: var(--primaryColor);
         }
 
         .submit-btn {
             padding: 20px 40px;
             margin-top: 0;
             border-radius: 32.5px;
-            border: 1px solid #2e303d;
-            background: #2e303d;
-            color: #fff;
+            border: 1px solid var(--buttonbg);
+            background: var(--buttonbg);
+            color: var(--primaryColor);
             transition: all 0.5s ease;
 
             &:hover {
-                border: 1px solid #ffffff;
+                border: 1px solid var(--primaryColor);
             }
         }
     }
@@ -127,7 +129,7 @@
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                color: #fff;
+                color: var(--primaryColor);
                 transition: all .5s ease;
             }
 
@@ -148,7 +150,7 @@
                         width: 60px;
                         line-height: 60px;
                         display: block;
-                        color: #fff;
+                        color: var(--primaryColor);
                         border-radius: 50%;
                         border: 1px solid rgba(255,255,255,.1);
                         text-align: center;
@@ -160,16 +162,16 @@
     }
 
     .info {
-        border-top: 1px solid $secondaryColor;
+        border-top: 1px solid var(--secondaryColor);
         padding: 20px 0;
         &-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
             .footer-copyright {
-                color: $secondaryColor;
+                color: var(--secondaryColor);
                 span {
-                    color: #ffffff;
+                    color: var(--primaryColor);
                 }
             }
             .footer-logo {

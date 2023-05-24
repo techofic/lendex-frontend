@@ -2,6 +2,9 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
+.error-section {
+    background-color: var(--bgSecondaryBlue);
+}
 .error-404-content {
     margin-top: 0;
 
@@ -23,7 +26,7 @@
 
     .error-button {
         margin-top: 30px;
-        border: 1px solid $borderColor;
+        border: 1px solid var(--borderColor);
         transition: all .5s ease;
         padding-left: 50px;
         padding-right: 50px;
@@ -35,7 +38,7 @@
         position: relative;
         z-index: 9;
         overflow: hidden;
-        color: #fff;
+        color: var(--primaryColor);
         box-shadow: none !important;
         outline: 0 !important;
         display: inline-block;
@@ -45,7 +48,7 @@
         }
 
         &:hover {
-            background-color: $borderColor;
+            background-color: var(--borderColor);
         }
     }
 }

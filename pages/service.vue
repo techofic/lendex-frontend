@@ -3,7 +3,7 @@
     <div>
         <!--************Service-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,11 +31,11 @@
 
         <!--************Service-Body****************-->
 
-        <div class="service-cards pb-135 pt-135 bg-secondary-blue">
+        <div class="service-cards pb-135 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-1.png" alt="">
                             </div>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-2.png" alt="">
                             </div>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-3.png" alt="">
                             </div>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-4.png" alt="">
                             </div>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-5.png" alt="">
                             </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 pb-30">
-                        <div class="product-card bg-dark-blue">
+                        <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-6.png" alt="">
                             </div>
@@ -142,7 +142,7 @@
 
         <!--************Counter****************-->
 
-        <div class="counter-section pb-135 pt-135 bg-secondary-blue">
+        <div class="counter-section pb-135 pt-135">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
@@ -190,7 +190,7 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="company-section pb-135 pt-135">
             <div class="container">
                 <div class="section-header">
                     <h4 class="subtitle">

@@ -3,7 +3,7 @@
     <div>
         <!--************Blog-Details-Right-Header****************-->
 
-        <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-section overflow-hidden pos-relative">
             <div class="breadcrumb-shape-top-left">
             </div>
             <div class="breadcrumb-shape-bottom-right">
@@ -31,7 +31,7 @@
 
         <!--************Blog-Details-Right-Body****************-->
 
-        <div class="blog-list-box pb-135 pt-135 bg-secondary-blue">
+        <div class="blog-list-box pb-135 pt-135">
             <div class="container">
                 <div class="row flex-lg-row flex-column-reverse">
                     <div class="col-xl-7 col-lg-7 offset-xl-1">
