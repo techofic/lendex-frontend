@@ -184,7 +184,7 @@ export default {
         async getProject() {
             const res = await this.callApi('get', `/api/projects/${this.$route.params.id}`);
             if (res.status == 200) {
-                this.projectInfo = res.data[0];
+                this.projectInfo = res.data;
                 console.log(this.projectInfo);
             };
         },
