@@ -202,7 +202,7 @@
             </div>
         </div>
 
-        <!--************Company****************-->
+        <!--**********************-->
 
         <div class="company-section pb-135 pt-135">
             <div class="container">
@@ -216,39 +216,44 @@
                 </div>
 
                 <div class="company-logo">
-                    <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
+                    <hooper v-for="(data, index) in companyInfo" :key="index" :settings="company" :wheelControl="false"
+                        :infiniteScroll="false">
                         <slide>
                             <div class="single-item">
                                 <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
+                                    <img :src="`http://127.0.0.1:8000/attachments/${data.image}`">
+                                    <img :src="`http://127.0.0.1:8000/attachments/${data.hover_image}`">
+                                    <!-- <img src="/assets/img/company-logo-1.png" alt=""> -->
+                                    <!-- <img src="/assets/img/1.png" alt=""> -->
+                                    <!-- {{ data.image }}
+                  {{ data.hover_image }} -->
                                 </a>
                             </div>
                         </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <!-- <img src="./assets/img/company-logo-1.png" alt=""> -->
-                                    <!-- <img src="./assets/img/1.png" alt=""> -->
-                                </a>
-                            </div>
-                        </slide>
+                        <!-- <slide>
+              <div class="single-item">
+                <a href="#" class="image">
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
+                </a>
+              </div>
+            </slide>
+            <slide>
+              <div class="single-item">
+                <a href="#" class="image">
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
+                </a>
+              </div>
+            </slide>
+            <slide>
+              <div class="single-item">
+                <a href="#" class="image">
+                  <img src="/assets/img/company-logo-1.png" alt="">
+                  <img src="/assets/img/1.png" alt="">
+                </a>
+              </div>
+            </slide> -->
                     </hooper>
                 </div>
             </div>
@@ -276,6 +281,8 @@ export default {
     },
     data() {
         return {
+            companyInfo: [],
+
             company: {
                 itemsToShow: 1,
                 centerMode: false,
@@ -295,6 +302,19 @@ export default {
                 },
             },
         };
+    },
+
+    methods: {
+        async getTrustedCompanie() {
+            const res = await this.callApi("get", "/api/trusted_companies");
+            if (res.status == 200) {
+                this.companyInfo = res.data;
+                console.log(this.companyInfo);
+            };
+        },
+    },
+    async created() {
+        this.getTrustedCompanie();
     },
 };
 </script>

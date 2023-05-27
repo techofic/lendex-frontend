@@ -303,6 +303,7 @@ button {
 }
 .product-card {
   padding: 70px;
+  height: 514px;
   background-color: var(--bgDarkBlue);
 }
 .product-card .inner-shape {
@@ -1325,7 +1326,7 @@ html {
 
 body {
   font-size: 1em;
-  font-family: "Poppins";
+  font-family: "Poppins, sans-serif";
 }
 
 h1, h2, h3, h4, h5, h6 {

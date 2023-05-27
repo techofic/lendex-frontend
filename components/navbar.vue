@@ -41,7 +41,7 @@
                                     <ul class="submenu">
                                         <li><nuxt-link to="/about">About Us</nuxt-link></li>
                                         <li><nuxt-link to="/project">Project</nuxt-link></li>
-                                        <li><nuxt-link to="/projectDetails">Project Details</nuxt-link></li>
+                                        <li><nuxt-link to="/project/id">Project Details</nuxt-link></li>
                                         <li><nuxt-link to="/faq">FAQ</nuxt-link></li>
                                         <li><nuxt-link to="/error">404 Page</nuxt-link></li>
                                     </ul>
@@ -146,7 +146,7 @@
                             <ul class="dropdown-menu" :class=" { show: showPagesDropdown } " v-if=" showPagesDropdown ">
                                 <li><nuxt-link class="dropdown-item" to="/about">ABOUT US</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/project">PROJECT</nuxt-link></li>
-                                <li><nuxt-link class="dropdown-item" to="/projectDetails">PROJECT DETAILS</nuxt-link></li>
+                                <li><nuxt-link class="dropdown-item" to="/project/id">PROJECT DETAILS</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/faq">FAQ</nuxt-link></li>
                                 <li><nuxt-link class="dropdown-item" to="/error">404 PAGE</nuxt-link></li>
                             </ul>

@@ -132,3 +132,28 @@
         </div>
     </div>
 </template>
+
+<script>
+
+export default {
+    data() {
+        return {
+            contactInfo: [],
+        };
+    },
+    methods: {
+        async addContactMe() {
+            const res = await this.callApi("get", "/api/contact_me");
+            if (res.status == 200) {
+                this.contactInfo = res.data;
+                console.log(this.contactInfo);
+            };
+        },
+
+    },
+    async created() {
+        this.addContactMe();
+    },
+
+};
+</script>

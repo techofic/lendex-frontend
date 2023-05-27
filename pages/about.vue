@@ -48,10 +48,9 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-8 offset-md-2 offset-lg-0 offset-xl-1">
                             <div class="video-info-content">
-                                <h2 class="title">I'm Mirta Akins</h2>
+                                <h2 class="title">I'm {{ userInfo.name }}</h2>
                                 <h3 class="sub-title">
-                                    UI/UX designer specializing in
-                                    shopify & webflow.
+                                    {{ userInfo.designation }}
                                 </h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and pesetting industry has been the
@@ -87,23 +86,26 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="education-tab" role="tabpanel">
                                     <ul class="resume-list">
-                                        <li class="resume-tab-list-single-item">
+                                        <li class="resume-tab-list-single-item" v-for="(data, index) in aboutEducation"
+                                            :key="index" v-if="data.type == 'education'">
                                             <div class="content">
                                                 <div class="left">
-                                                    <span class="year">2009 - 2010</span>
+                                                    <span class="year">{{ data.start_date }} - {{ data.end_date }}</span>
                                                 </div>
                                                 <div class="right">
-                                                    <h3 class="title">Bachelor of Business Administration</h3>
-                                                    <span class="institute-name">University of California, Berkeley</span>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been indus dard dummy text ever since the
-                                                        1500 when an uniknown prnter took galley of type and scrambled make
-                                                        specimen book has not only five centuries the into electronic.
+                                                    <h3 class="title">
+                                                        {{ data.degree }}
+                                                    </h3>
+                                                    <span class="institute-name">
+                                                        {{ data.institute }}
+                                                    </span>
+                                                    <p>
+                                                        {{ data.description }}
                                                     </p>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="resume-tab-list-single-item">
+                                        <!-- <li class="resume-tab-list-single-item">
                                             <div class="content">
                                                 <div class="left">
                                                     <span class="year">2012 - 2014</span>
@@ -134,23 +136,25 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade show" id="experience-tab" role="tabpanel">
                                     <ul class="resume-list">
-                                        <li class="resume-tab-list-single-item">
+                                        <li class="resume-tab-list-single-item"
+                                            v-for="(data, index) in aboutExperience.data" :key="index"
+                                            v-if="data.type == 'experience'">
                                             <div class="content">
                                                 <div class="left">
-                                                    <span class="year">2016 - 2018</span>
+                                                    <span class="year">{{ data.start_date }} - {{ data.end_date }}</span>
                                                 </div>
                                                 <div class="right">
-                                                    <h3 class="title">Web Designer</h3>
-                                                    <span class="institute-name">Graphic Dev</span>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been indus dard dummy text ever since the
-                                                        1500 when an uniknown prnter took galley of type and scrambled make
-                                                        specimen book has not only five centuries the into electronic.
+                                                    {{ data.degree }}
+                                                    <span class="institute-name">
+                                                        {{ data.institute }}
+                                                    </span>
+                                                    <p>
+                                                        {{ data.description }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -183,267 +187,66 @@
 
         <!--************Counter****************-->
 
-        <div class="counter-section pb-135 pt-135">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>258</span>+
-                                </h2>
-                                <span class="text">Happy Clients</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>590</span>K
-                                </h2>
-                                <span class="text">Project Complete</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>28</span>+
-                                </h2>
-                                <span class="text">Years Of Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Counter />
 
         <!--************Testomonial****************-->
 
-        <div class="testomonial-section pt-135 pb-135">
-            <div class="container">
-                <div class="row">
-                    <div class="col d-xl-flex justify-content-xl-end">
-                        <div class="section-content pos-relative">
-                            <div class="section-header">
-                                <h4 class="subtitle">
-                                    <span>||</span>Testomonial
-                                </h4>
-                                <h4 class="title">
-                                    Satisfied Clients Say
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testomonial-wrapper">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="testomonial-carousel">
-                                <hooper :settings="testomonial" :itemsToSlide="1" :wheelControl="false"
-                                    :infiniteScroll="false">
-                                    <slide>
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="icon">“</span>
-                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
-                                                    industry has
-                                                    been the industr standard dummy.</p>
-                                                <div class="info">
-                                                    <div class="author">
-                                                        <h4 class="name">Raleigh Friend</h4>
-                                                        <span class="designation">CEO, Seoly</span>
-                                                    </div>
-                                                    <ul class="review">
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </slide>
-                                    <slide>
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="icon">“</span>
-                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
-                                                    industry has
-                                                    been the industr standard dummy.</p>
-                                                <div class="info">
-                                                    <div class="author">
-                                                        <h4 class="name">Raleigh Friend</h4>
-                                                        <span class="designation">CEO, Seoly</span>
-                                                    </div>
-                                                    <ul class="review">
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </slide>
-                                    <slide>
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="icon">“</span>
-                                                <p class="text">Lorem Ipsum simpy dummy text of the printing and types
-                                                    industry has
-                                                    been the industr standard dummy.</p>
-                                                <div class="info">
-                                                    <div class="author">
-                                                        <h4 class="name">Raleigh Friend</h4>
-                                                        <span class="designation">CEO, Seoly</span>
-                                                    </div>
-                                                    <ul class="review">
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                        <li class="fill"><i class="las la-star"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </slide>
-
-                                    <hooper-pagination slot="hooper-addons"></hooper-pagination>
-
-                                </hooper>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Testomonial />
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135">
-            <div class="container">
-                <div class="section-header">
-                    <h4 class="subtitle">
-                        <span>||</span>Favourite Clients
-                    </h4>
-                    <h4 class="title">
-                        Work With Trusted Company.
-                    </h4>
-                </div>
+        <Company />
 
-                <div class="company-logo">
-                    <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                    </hooper>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
-import {
-  Hooper,
-  Slide,
-  Progress as HooperProgress,
-  Pagination as HooperPagination,
-  Navigation as HooperNavigation,
-} from "hooper";
-import "hooper/dist/hooper.css";
+import Counter from "/components/counter";
+import Testomonial from "/components/testomonial";
+import Company from "/components/company";
 
 export default {
-  components: {
-    Hooper,
-    Slide,
-    HooperProgress,
-    HooperPagination,
-    HooperNavigation,
-  },
-  data() {
-    return {
-      testomonial: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          450: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          800: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          1000: {
-            itemsToShow: 2,
-          },
+    components: {
+        Counter,
+        Testomonial,
+        Company,
+    },
+    data() {
+        return {
+            userInfo: [],
+            aboutEducation: [],
+            aboutExperience: [],
+        };
+    },
+
+    methods: {
+        async getUserInfo() {
+            const res = await this.callApi("get", "/api/user");
+            if (res.status == 200) {
+                this.userInfo = res.data[0];
+                // console.log(this.userInfo);
+            }
         },
-      },
-      company: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          480: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          991: {
-            centerMode: false,
-            itemsToShow: 3,
-          },
-          1200: {
-            itemsToShow: 4,
-          },
+        async getEducation() {
+            const res = await this.callApi("get", "/api/educations");
+            if (res.status == 200) {
+                this.aboutEducation = res.data;
+                console.log(this.aboutEducation);
+            };
         },
-      },
-    };
-  },
+        async getExperience() {
+            const res = await this.callApi("get", "/api/experiences");
+            if (res.status == 200) {
+                this.aboutExperience = res.data;
+                // console.log(this.aboutExperience);
+            };
+        },
+    },
+    async created() {
+        this.getUserInfo();
+        this.getEducation();
+        this.getExperience();
+
+    },
 };
 </script>

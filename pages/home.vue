@@ -42,7 +42,8 @@
         </div>
         <div class="hero-portrait">
           <div class="image">
-            <img src="/assets/img/portrait-hero.png" alt="">
+            <!-- <img src="/assets/img/portrait-hero.png" alt=""> -->
+            <img :src="`http://127.0.0.1:8000/attachments/${userInfo.image}`">
             <div class="image-half-round-shape">
             </div>
             <div class="social-link">
@@ -71,28 +72,32 @@
 
         <div class="service-section--carousel">
           <hooper :settings="service" :itemsToSlide="3" :wheelControl="false" :infiniteScroll="false">
-            <slide>
+            <slide v-for="(data, index) in ServiceTitle" :key="index">
               <div class="product-card ">
                 <!-- <div class="inner-shape inner-shape-top-right">
                 </div> -->
                 <div class="product-card--icon">
+                  <!-- {{ data.icon }} -->
                   <img src="/assets/img/service-icon-1.png" alt="">
                 </div>
                 <h4 class="product-card--title">
-                  UI/UX Design
+                  <!-- UI/UX Design -->
+                  {{ data.title }}
                 </h4>
-                <ul class="product-card--list">
-                  <li><span><i class="las la-angle-double-right"></i></span>Landing Pages</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
+                <ul v-for="(item) in data.points" class="product-card--list">
+                  <li><span><i class="las la-angle-double-right"></i></span>
+                    {{ item.title }}
+                  </li>
+                  <!-- <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
                   <li><span><i class="las la-angle-double-right"></i></span>WireFraming</li>
                   <li><span><i class="las la-angle-double-right"></i></span>Prototyping</li>
-                  <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li> -->
                 </ul>
                 <!-- <div class="inner-shape inner-shape-bottom-right">
                 </div> -->
               </div>
             </slide>
-            <slide>
+            <!-- <slide>
               <div class="product-card">
                 <div class="product-card--icon">
                   <img src="/assets/img/service-icon-1.png" alt="">
@@ -142,7 +147,7 @@
                   <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li>
                 </ul>
               </div>
-            </slide>
+            </slide> -->
 
             <hooper-pagination slot="hooper-addons"></hooper-pagination>
           </hooper>
@@ -170,16 +175,20 @@
             </button>
           </div>
           <div class="col-lg-6">
-            <div class="skill-area">
+            <div class="skill-area" v-for="(data, index) in skillInfo" :key="index">
               <div class="skill-area--item">
-                <h4 class="tag">Communication</h4>
+                <h4 class="tag">
+                  {{ data.title }}
+                </h4>
                 <div class="skill-box">
                   <div class="progress-line" data-width="75" style="width: 75%;">
-                    <span class="skill-percentage">75%</span>
+                    <span class="skill-percentage">
+                      {{ data.percentage }}
+                    </span>
                   </div>
                 </div>
               </div>
-              <div class="skill-area--item">
+              <!-- <div class="skill-area--item">
                 <h4 class="tag">Leadership</h4>
                 <div class="skill-box">
                   <div class="progress-line" data-width="70" style="width: 70%;">
@@ -202,7 +211,7 @@
                     <span class="skill-percentage">80%</span>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -210,52 +219,8 @@
     </div>
 
     <!--************Counter****************-->
-
-    <div class="counter-section pb-135 pt-135">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="counter-single--item">
-              <div class="icon">
-                <img src="/assets/img/counterup-icon-1.png" alt="">
-              </div>
-              <div class="content">
-                <h2 class="number">
-                  <span>258</span>+
-                </h2>
-                <span class="text">Happy Clients</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="counter-single--item">
-              <div class="icon">
-                <img src="/assets/img/counterup-icon-2.png" alt="">
-              </div>
-              <div class="content">
-                <h2 class="number">
-                  <span>590</span>K
-                </h2>
-                <span class="text">Project Complete</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="counter-single--item">
-              <div class="icon">
-                <img src="/assets/img/counterup-icon-3.png" alt="">
-              </div>
-              <div class="content">
-                <h2 class="number">
-                  <span>28</span>+
-                </h2>
-                <span class="text">Years Of Experience</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <Counter />
 
     <!--************Project****************-->
 
@@ -273,8 +238,34 @@
         </div>
       </div>
       <div class="project-carousel">
-        <hooper :settings="project" :itemsToSlide="2" :wheelControl="false" :infiniteScroll="false">
+        <hooper v-for="(data, index) in projectInfo" :key="index" :settings="project" :itemsToSlide="2" :wheelControl="false" :infiniteScroll="false">
           <slide>
+            <nuxt-link :to="`/project/${data.id}`">
+              <div class="project-single--item">
+                <div class="img-box">
+                  <div class="bg-overlay">
+                  </div>
+                  <div class="bg-image">
+                    <img src="/assets/img/project-slider-img-3.png" alt="">
+                  </div>
+                  <div class="image">
+                    <img :src="`http://127.0.0.1:8000/attachments/${data.image}`">
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="title">
+                    {{ data.title }}
+                  </h4>
+                  <ul class="category-nav-item">
+                    <li>Gardeining</li>
+                    <li>/ Landscaping</li>
+                    <li>/ Greem</li>
+                  </ul>
+                </div>
+              </div>
+            </nuxt-link>
+          </slide>
+          <!-- <slide>
             <div class="project-single--item">
               <div class="img-box">
                 <div class="bg-overlay">
@@ -317,29 +308,7 @@
                 </ul>
               </div>
             </div>
-          </slide>
-          <slide>
-            <div class="project-single--item">
-              <div class="img-box">
-                <div class="bg-overlay">
-                </div>
-                <div class="bg-image">
-                  <img src="/assets/img/project-slider-img-3.png" alt="">
-                </div>
-                <div class="image">
-                  <img src="/assets/img/project-slider-img-3.png" alt="">
-                </div>
-              </div>
-              <div class="content">
-                <h4 class="title">Musion - Gardening Website Template</h4>
-                <ul class="category-nav-item">
-                  <li>Gardeining</li>
-                  <li>/ Landscaping</li>
-                  <li>/ Greem</li>
-                </ul>
-              </div>
-            </div>
-          </slide>
+          </slide> -->
 
           <hooper-pagination slot="hooper-addons"></hooper-pagination>
 
@@ -351,155 +320,11 @@
 
     <!--************Testomonial****************-->
 
-    <div class="testomonial-section pt-135 pb-135">
-      <div class="container">
-        <div class="row">
-          <div class="col d-xl-flex justify-content-xl-end">
-            <div class="section-content pos-relative">
-              <div class="section-header">
-                <h4 class="subtitle">
-                  <span>||</span>Testomonial
-                </h4>
-                <h4 class="title">
-                  Satisfied Clients Say
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testomonial-wrapper">
-          <div class="row">
-            <div class="col-12">
-              <div class="testomonial-carousel">
-                <hooper :settings="testomonial" :itemsToSlide="1" :wheelControl="false" :infiniteScroll="false">
-                  <slide>
-                    <div class="item">
-                      <div class="content">
-                        <span class="icon">“</span>
-                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                          been the industr standard dummy.</p>
-                        <div class="info">
-                          <div class="author">
-                            <h4 class="name">Raleigh Friend</h4>
-                            <span class="designation">CEO, Seoly</span>
-                          </div>
-                          <ul class="review">
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </slide>
-                  <slide>
-                    <div class="item">
-                      <div class="content">
-                        <span class="icon">“</span>
-                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                          been the industr standard dummy.</p>
-                        <div class="info">
-                          <div class="author">
-                            <h4 class="name">Raleigh Friend</h4>
-                            <span class="designation">CEO, Seoly</span>
-                          </div>
-                          <ul class="review">
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </slide>
-                  <slide>
-                    <div class="item">
-                      <div class="content">
-                        <span class="icon">“</span>
-                        <p class="text">Lorem Ipsum simpy dummy text of the printing and types industry has
-                          been the industr standard dummy.</p>
-                        <div class="info">
-                          <div class="author">
-                            <h4 class="name">Raleigh Friend</h4>
-                            <span class="designation">CEO, Seoly</span>
-                          </div>
-                          <ul class="review">
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                            <li class="fill"><i class="las la-star"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </slide>
-
-                  <hooper-pagination slot="hooper-addons"></hooper-pagination>
-
-                </hooper>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Testomonial />
 
     <!--************Company****************-->
 
-    <div class="company-section pb-135 pt-135">
-      <div class="container">
-        <div class="section-header">
-          <h4 class="subtitle">
-            <span>||</span>Favourite Clients
-          </h4>
-          <h4 class="title">
-            Work With Trusted Company.
-          </h4>
-        </div>
-
-        <div class="company-logo">
-          <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
-            <slide>
-              <div class="single-item">
-                <a href="#" class="image">
-                  <img src="/assets/img/company-logo-1.png" alt="">
-                  <img src="/assets/img/1.png" alt="">
-                </a>
-              </div>
-            </slide>
-            <slide>
-              <div class="single-item">
-                <a href="#" class="image">
-                  <img src="/assets/img/company-logo-1.png" alt="">
-                  <img src="/assets/img/1.png" alt="">
-                </a>
-              </div>
-            </slide>
-            <slide>
-              <div class="single-item">
-                <a href="#" class="image">
-                  <img src="/assets/img/company-logo-1.png" alt="">
-                  <img src="/assets/img/1.png" alt="">
-                </a>
-              </div>
-            </slide>
-            <slide>
-              <div class="single-item">
-                <a href="#" class="image">
-                  <img src="/assets/img/company-logo-1.png" alt="">
-                  <img src="/assets/img/1.png" alt="">
-                </a>
-              </div>
-            </slide>
-          </hooper>
-        </div>
-      </div>
-    </div>
+    <Company />
 
     <!--************Blog****************-->
 
@@ -578,6 +403,10 @@
 
 
 <script>
+import Counter from "/components/counter";
+import Testomonial from "/components/testomonial";
+import Company from "/components/company";
+
 import {
   Hooper,
   Slide,
@@ -589,6 +418,9 @@ import "hooper/dist/hooper.css";
 
 export default {
   components: {
+    Counter,
+    Testomonial,
+    Company,
     Hooper,
     Slide,
     HooperProgress,
@@ -598,6 +430,12 @@ export default {
   data() {
     return {
       userInfo: [],
+      ServiceTitle: [],
+      skillInfo: [],
+      statisticCount: [],
+      projectInfo: [],
+      testomonialInfo: [],
+      companyInfo: [],
 
       service: {
         itemsToShow: 1,
@@ -674,18 +512,71 @@ export default {
     };
   },
   methods: {
-
     async getUserInfo() {
-
       const res = await this.callApi("get", "/api/user");
       if (res.status == 200) {
         this.userInfo = res.data[0];
         console.log(this.userInfo);
       }
-    }
+    },
+
+    async getService() {
+      const res = await this.callApi("get", "/api/services");
+      if (res.status == 200) {
+        this.ServiceTitle = res.data;
+        console.log(this.ServiceTitle);
+      }
+    },
+
+    async getSpecialSkill() {
+      const res = await this.callApi("get", "/api/special_skills");
+      if(res.status == 200) {
+        this.skillInfo = res.data ;
+        console.log(this.skillInfo);
+      };
+    },
+
+    async getStatisticsCount() {
+      const res = await this.callApi("get", "/api/statistics_count");
+      if(res.status == 200) {
+        this.statisticCount =  res.data[0] ;
+        console.log(this.statisticCount);
+      };
+    },
+
+    async getProject() {
+      const res = await this.callApi("get", "/api/projects");
+      if(res.status == 200) {
+        this.projectInfo =  res.data ;
+        console.log(this.projectInfo);
+      };
+    },
+
+    async getTestimonial() {
+      const res = await this.callApi("get", "/api/testimonials");
+      if(res.status == 200) {
+        this.testomonialInfo =  res.data ;
+        console.log(this.testomonialInfo);
+      };
+    },
+
+    async getTrustedCompanie() {
+      const res = await this.callApi("get", "/api/trusted_companies");
+      if(res.status == 200) {
+        this.companyInfo =  res.data ;
+        console.log(this.companyInfo);
+      };
+    },
+     
   },
   async created() {
     this.getUserInfo();
+    this.getService();
+    this.getSpecialSkill();
+    this.getStatisticsCount();
+    this.getProject();
+    this.getTestimonial();
+    this.getTrustedCompanie();
   },
 
 };

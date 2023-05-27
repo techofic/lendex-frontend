@@ -420,97 +420,17 @@
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135">
-            <div class="container">
-                <div class="section-header">
-                    <h4 class="subtitle">
-                        <span>||</span>Favourite Clients
-                    </h4>
-                    <h4 class="title">
-                        Work With Trusted Company.
-                    </h4>
-                </div>
+        <Company />
 
-                <div class="company-logo">
-                    <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                    </hooper>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
-import {
-  Hooper,
-  Slide,
-  Progress as HooperProgress,
-  Pagination as HooperPagination,
-  Navigation as HooperNavigation,
-} from "hooper";
-import "hooper/dist/hooper.css";
+import Company from "/components/company";
 
 export default {
   components: {
-    Hooper,
-    Slide,
-    HooperProgress,
-    HooperPagination,
-    HooperNavigation,
-  },
-  data() {
-    return {
-      company: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          480: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          991: {
-            centerMode: false,
-            itemsToShow: 3,
-          },
-          1200: {
-            itemsToShow: 4,
-          },
-        },
-      },
-    };
+    Company,
   },
 };
 </script>

@@ -34,24 +34,26 @@
         <div class="service-cards pb-135 pt-135">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 pb-30">
+                    <div class="col-lg-4 col-12 pb-30" v-for="(data, index) in ServiceTitle" :key="index">
                         <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-1.png" alt="">
                             </div>
                             <h4 class="product-card--title">
-                                UI/UX Design
+                                {{ data.title }}
                             </h4>
-                            <ul class="product-card--list">
-                                <li><span><i class="las la-angle-double-right"></i></span>Landing Pages</li>
-                                <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
-                                <li><span><i class="las la-angle-double-right"></i></span>WireFraming</li>
-                                <li><span><i class="las la-angle-double-right"></i></span>Prototyping</li>
-                                <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li>
+                            <ul v-for="(item) in data.points" class="product-card--list">
+                                <li><span><i class="las la-angle-double-right"></i></span>
+                                    {{ item.title }}
+                                </li>
+                                <!-- <li><span><i class="las la-angle-double-right"></i></span>User Flow</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>WireFraming</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>Prototyping</li>
+                  <li><span><i class="las la-angle-double-right"></i></span>Mobile App Design</li> -->
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12 pb-30">
+                    <!-- <div class="col-lg-4 col-12 pb-30">
                         <div class="product-card">
                             <div class="product-card--icon">
                                 <img src="/assets/img/service-icon-2.png" alt="">
@@ -135,152 +137,47 @@
                                 <li><span><i class="las la-angle-double-right"></i></span>Brand Matrices</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!--************Counter****************-->
 
-        <div class="counter-section pb-135 pt-135">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>258</span>+
-                                </h2>
-                                <span class="text">Happy Clients</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>590</span>K
-                                </h2>
-                                <span class="text">Project Complete</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="counter-single--item">
-                            <div class="icon">
-                                <img src="/assets/img/counterup-icon-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h2 class="number">
-                                    <span>28</span>+
-                                </h2>
-                                <span class="text">Years Of Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Counter />
 
         <!--************Company****************-->
 
-        <div class="company-section pb-135 pt-135">
-            <div class="container">
-                <div class="section-header">
-                    <h4 class="subtitle">
-                        <span>||</span>Favourite Clients
-                    </h4>
-                    <h4 class="title">
-                        Work With Trusted Company.
-                    </h4>
-                </div>
+        <Company />
 
-                <div class="company-logo">
-                    <hooper :settings="company" :wheelControl="false" :infiniteScroll="false">
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                        <slide>
-                            <div class="single-item">
-                                <a href="#" class="image">
-                                    <img src="/assets/img/company-logo-1.png" alt="">
-                                    <img src="/assets/img/1.png" alt="">
-                                </a>
-                            </div>
-                        </slide>
-                    </hooper>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
-import {
-  Hooper,
-  Slide,
-  Progress as HooperProgress,
-  Pagination as HooperPagination,
-  Navigation as HooperNavigation,
-} from "hooper";
-import "hooper/dist/hooper.css";
+import Counter from "/components/counter";
+import Company from "/components/company";
 
 export default {
-  components: {
-    Hooper,
-    Slide,
-    HooperProgress,
-    HooperPagination,
-    HooperNavigation,
-  },
-  data() {
-    return {
-      company: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          480: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          991: {
-            centerMode: false,
-            itemsToShow: 3,
-          },
-          1200: {
-            itemsToShow: 4,
-          },
+    components: {
+        Counter,
+        Company,
+    },
+    data() {
+        return {
+            ServiceTitle: [],
+        };
+    },
+    methods: {
+        async getService() {
+            const res = await this.callApi("get", "/api/services");
+            if (res.status == 200) {
+                this.ServiceTitle = res.data;
+                console.log(this.ServiceTitle);
+            }
         },
-      },
-    };
-  },
+    },
+    async created() {
+        this.getService();
+    },
 };
 </script>

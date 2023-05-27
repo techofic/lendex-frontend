@@ -47,30 +47,32 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="projects-wrapper-gallery-content">
-                            <div class="row">
-                                <div class="col-md-6 filter-item html">
+                            <div class="row" v-for="(data, index) in projectInfo" :key="index">
+                                <nuxt-link :to="`/project/${data.id}`" class="col-md-6 filter-item html">
                                     <div class="project-single--item pb-30">
                                         <div class="img-box">
                                             <div class="bg-overlay">
                                             </div>
                                             <div class="bg-image">
-                                                <img src="/assets/img/project-slider-img-1.png" alt="">
+                                                <img src="/assets/img/project-slider-img-3.png" alt="">
                                             </div>
                                             <div class="image">
-                                                <img src="/assets/img/project-slider-img-1.png" alt="">
+                                                <img :src="`http://127.0.0.1:8000/attachments/${data.image}`">
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h4 class="title">Givest - Non Profit PSD Template</h4>
+                                            <h4 class="title">
+                                                {{ data.title }}
+                                            </h4>
                                             <ul class="category-nav-item">
-                                                <li>Charity</li>
-                                                <li>/ Fund Rising</li>
-                                                <li>/ Non Profit</li>
+                                                <li>Gardeining</li>
+                                                <li>/ Landscaping</li>
+                                                <li>/ Greem</li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 filter-item industwordpressrial">
+                                </nuxt-link>
+                                <!-- <div class="col-md-6 filter-item industwordpressrial">
                                     <div class="project-single--item pb-30">
                                         <div class="img-box">
                                             <div class="bg-overlay">
@@ -223,7 +225,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -233,4 +235,27 @@
     </div>
 </template>
 
-</html>
+<script>
+
+export default {
+    data() {
+        return {
+            projectInfo: [],
+        };
+    },
+    methods: {
+        async getProject() {
+            const res = await this.callApi("get", "/api/projects");
+            if (res.status == 200) {
+                this.projectInfo = res.data;
+                console.log(this.projectInfo);
+            };
+        },
+
+    },
+    async created() {
+        this.getProject();
+    },
+
+};
+</script>
