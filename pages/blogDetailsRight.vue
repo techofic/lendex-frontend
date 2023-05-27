@@ -421,18 +421,19 @@
                                             </h4>
                                             <div class="post-meta">
                                                 <i class="las la-calendar"></i>
-                                            09 Apr, 2021
+                                                09 Apr, 2021
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-widget-single-area">
-                            <h3 class="title">Follow Me</h3>
-                            <div class="social-link">
-                                <a href="#"><i class="lab la-facebook-f"></i></a>
-                                <a href="#"><i class="lab la-dribbble"></i></a>
-                                <a href="#"><i class="lab la-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-widget-single-area">
+                                <h3 class="title">Follow Me</h3>
+                                <div class="social-link">
+                                    <a href="#"><i class="lab la-facebook-f"></i></a>
+                                    <a href="#"><i class="lab la-dribbble"></i></a>
+                                    <a href="#"><i class="lab la-linkedin-in"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,6 +441,4 @@
             </div>
         </div>
     </div>
-</div></template>
-
-</html>
+</template>

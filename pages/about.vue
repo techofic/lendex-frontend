@@ -70,12 +70,10 @@
                     <div class="col-12">
                         <ul class="resume-tab nav">
                             <li class="nav-item">
-                                <button class="nav-link active" data-bs-toggle="tab"
-                                    data-bs-target="#education-tab">Education</button>
+                                <button class="nav-link"  @click="activeTab = 'education-tab'">Education</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab"
-                                    data-bs-target="#experience-tab">Experience</button>
+                                <button class="nav-link"  @click="activeTab = 'experience-tab'">Experience</button>
                             </li>
                         </ul>
                     </div>
@@ -83,8 +81,8 @@
                 <div class="resume-info-display-wrapper">
                     <div class="row">
                         <div class="col-12">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="education-tab" role="tabpanel">
+                            <div class="tabb-content" id="myTabContent">
+                                <div class="tabb-pane" id="education-tab" v-show="activeTab === 'education-tab'">
                                     <ul class="resume-list">
                                         <li class="resume-tab-list-single-item" v-for="(data, index) in aboutEducation"
                                             :key="index" v-if="data.type == 'education'">
@@ -139,7 +137,7 @@
                                         </li> -->
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade show" id="experience-tab" role="tabpanel">
+                                <div class="tabb-pane" id="experience-tab" v-show="activeTab === 'experience-tab'">
                                     <ul class="resume-list">
                                         <li class="resume-tab-list-single-item"
                                             v-for="(data, index) in aboutExperience.data" :key="index"
@@ -213,6 +211,7 @@ export default {
     },
     data() {
         return {
+            activeTab: 'education-tab',
             userInfo: [],
             aboutEducation: [],
             aboutExperience: [],
@@ -246,7 +245,6 @@ export default {
         this.getUserInfo();
         this.getEducation();
         this.getExperience();
-
     },
 };
 </script>

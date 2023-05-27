@@ -272,5 +272,3 @@
         </div>
     </div>
 </template>
-
-</html>

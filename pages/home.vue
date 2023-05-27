@@ -432,10 +432,7 @@ export default {
       userInfo: [],
       ServiceTitle: [],
       skillInfo: [],
-      statisticCount: [],
       projectInfo: [],
-      testomonialInfo: [],
-      companyInfo: [],
 
       service: {
         itemsToShow: 1,
@@ -473,42 +470,6 @@ export default {
           },
         },
       },
-      testomonial: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          450: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          800: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          1000: {
-            itemsToShow: 2,
-          },
-        },
-      },
-      company: {
-        itemsToShow: 1,
-        centerMode: false,
-        // itemsToSlide : 3,
-        breakpoints: {
-          480: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          991: {
-            centerMode: false,
-            itemsToShow: 3,
-          },
-          1200: {
-            itemsToShow: 4,
-          },
-        },
-      },
     };
   },
   methods: {
@@ -536,35 +497,11 @@ export default {
       };
     },
 
-    async getStatisticsCount() {
-      const res = await this.callApi("get", "/api/statistics_count");
-      if(res.status == 200) {
-        this.statisticCount =  res.data[0] ;
-        console.log(this.statisticCount);
-      };
-    },
-
     async getProject() {
       const res = await this.callApi("get", "/api/projects");
       if(res.status == 200) {
         this.projectInfo =  res.data ;
         console.log(this.projectInfo);
-      };
-    },
-
-    async getTestimonial() {
-      const res = await this.callApi("get", "/api/testimonials");
-      if(res.status == 200) {
-        this.testomonialInfo =  res.data ;
-        console.log(this.testomonialInfo);
-      };
-    },
-
-    async getTrustedCompanie() {
-      const res = await this.callApi("get", "/api/trusted_companies");
-      if(res.status == 200) {
-        this.companyInfo =  res.data ;
-        console.log(this.companyInfo);
       };
     },
      
@@ -573,10 +510,7 @@ export default {
     this.getUserInfo();
     this.getService();
     this.getSpecialSkill();
-    this.getStatisticsCount();
     this.getProject();
-    this.getTestimonial();
-    this.getTrustedCompanie();
   },
 
 };
